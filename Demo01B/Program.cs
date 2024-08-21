@@ -10,6 +10,9 @@ namespace Demo01B
     {
         static void Main(string[] args)
         {
+            Profesor profesor = new Profesor();
+            profesor.CalcularSueldoNeto(5200);
+
             Persona persona = new Persona();
             persona.Nombre = "Carlitos";
             persona.Apellido = "Torres";
@@ -31,6 +34,15 @@ namespace Demo01B
             //Console.WriteLine(persona.NombresCompletos);
             Console.WriteLine(triangulo.CalcularArea());
             Console.Read();
+
+            Estudiante estudiante = new Estudiante()
+            {
+                Nombre = "Juan",
+                Apellido = "De la Llama",
+                Nota = 20
+            };
+
+            
         }
     }
 }
